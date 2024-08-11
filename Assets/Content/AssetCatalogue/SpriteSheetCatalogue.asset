@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c80ec6b0d14ee47aeb92c9d2102ee5, type: 3}
+  m_Name: SpriteSheetCatalogue
+  m_EditorClassIdentifier: 
+  LoadingIconAtlas:
+    m_AssetGUID: 0e33f3555f863394abc5910e8c5f241a
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  ResourceIconAtlas:
+    m_AssetGUID: 7c5338a99d32b2746a4ef4b097f85a62
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  ConditionSettingIconAtlas:
+    m_AssetGUID: 05e81d033c306ff42ab70383d183c768
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  MainControlPanelAtlas:
+    m_AssetGUID: 322d6cdfd25a5d04d9b9daca2fb30eb0
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  MapSelectPanelAtlas:
+    m_AssetGUID: 3745451d186b66a478b9532203e29573
+    m_SubObjectName: 
+    m_SubObjectGUID: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0

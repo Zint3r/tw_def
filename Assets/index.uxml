@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: -87px; width: 100%; opacity: 1;">
+        <ui:Button text="Button" display-tooltip-when-elided="true" />
+    </ui:VisualElement>
+    <ui:BoundsField label="Bounds" />
+</ui:UXML>

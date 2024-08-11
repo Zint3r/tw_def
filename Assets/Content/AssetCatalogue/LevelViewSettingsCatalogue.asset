@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1460df0d8e3de543a0113b1ac1bf709, type: 3}
+  m_Name: LevelViewSettingsCatalogue
+  m_EditorClassIdentifier: 
+  LevelViewConfigurations:
+    m_AssetGUID: d9c65ddb7292aa8419087042b451596c
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  PrefabBackgroundReferences:
+  - LevelDefinitionId: level.Abbys
+    Segments:
+    - SegmentId: 0
+      Prefab:
+        m_AssetGUID: 66d92342a0040dd42a10ac11af51e340
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0
+    - SegmentId: 1
+      Prefab:
+        m_AssetGUID: 66d92342a0040dd42a10ac11af51e340
+        m_SubObjectName: 
+        m_SubObjectType: 
+        m_EditorAssetChanged: 0

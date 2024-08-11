@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "disco-amphora-422609-j1",
+  "private_key_id": "89dadae6e2ed9f85c55987b56ff52b7559c61105",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDkiLM1AmFsiP/W\nPSlmwPJB6rwwBvYWDVdt3lTLVNo8Gd56y6atkic/CbnkyJ6WkIWjNeBhUInhHBmO\n8YNVjXsqde745uAFkwFElZFgNmwHHSmm2y6DOjZN0R5bdg4Eo5EcIm8gjHyxgrIf\n+ltl53M2hVNcDhCKE1PZWTRtq9J6oEzgXG2RO/4FuhJeATykh7yfYDV6JFZtT+eN\nB3fAkF4L/1mVGeangxdX8c8fS5fjT/7lPKaFkJv0pg77L6UqUgjq0XKUNwlfFxFJ\nBT/NDoaLJf3HuoNGElNkNOjqtEkOgJrZrcPWXMNst7AaEQj1n+xqGqh672L5w+yo\nZrcy/VwBAgMBAAECggEADzRPDphKyLCcAMdklpWrUxpdtyjyEgkvh2Y9faJMEKfn\nRtkqDNiGlumRPg42NYMw+Oj6is7pFW/L/YLGP5i1mIoXF4/YrgDtRSsEQdftEP4Y\n3s/XRNtzGx3uEfIFQGbCHpKQknmg9CMOBxWeI2X7eCWfpFC6kKJ04ibOrPs7pMp0\nOzo8ntVIjXG6jvBm9jQpLC5PCpLn45wJEG/MECk1bOZTborB731+Kprn5WDV3ggY\nBYSE1zTMxL1mv/h6x+vajaSF7q4SAqScgfBjSMuRTyctukbQPjpY2EioVqdYkmTk\nrYYSeparab1RGeep7D9MTpeuZ2WVDC/WoZTGMdyTdwKBgQD4kn5V/VR6ZFLgSLc0\nhIlgT4q++Pswi+GMIF3Jnj5myWYUrP8nRaOxgz4671FSpP2AKdtcyqkg8ADTETB3\nU9ggAopY7jAyVx9ya2CBRa8366xolykoPGO62zVGpAT6SFbte8sPOoxJv6fgbr6s\n2Tse1P/eGsKSnO+WQusiwjCGnwKBgQDrXOtrTwUIvWcT+5M2xrt5SVFYRigr7Vq1\nElSnS+IQG+5Vy2RvJVBkZ/1NneohJH2baqqXFN1JFIH1LAareHpfB24y6aeQ/j45\nbP0QvH87NIoACnXd6E7XAh1B48By1F0bG1vDMwMYjMaG14RuznpbgkIjcvRQu7yK\nNzZetb45XwKBgQCa3bJGYrnCM0ULJWK3Hqf0UDpSNw9QtKXGRtgH6EZahbnKwemK\nDzIoQ2t/DmEtS0wBEJLx4fWzZrQszDXU8nDhqJOHSobOpkcaY1nR0JeVEIju9NaY\nkd9UqIQtybysLmuyNAFUMJb8z6KJCpZTXFggInZza1q0O4Btrq2Oj0vqYwKBgQC5\noIdsEt59jiQF9pyczxB9D/5ACNUWEBVCSjrJ12dsHRtUPx3vKxbEmd+Fn85QZV9L\nfE0e6y27vZjhrN91zYd1+35GWVH3YQ3ibLsKwB/4qe9NKPLdGaNUoC5DEUVvS15D\nSsiMo2cFrcHGB6RDYEXQdmODYd6e7fI9cF5JRD3LMQKBgEiZkC8pQJQNynNxZCF4\n+nWPiFPmXIrVoYBao9IS/XaaOL47aZMgQ0VPCm2K99zgjHaaS+oy/mSHdSBM+pRZ\n7NhNauNJzLsOBJbbRVTh2+NVT1L745N1QA5B63sSxKw4HmAdYxVW7QYBlbWjl9JX\nTvi07kNgkPCxiVE4yE38zkA0\n-----END PRIVATE KEY-----\n",
+  "client_email": "testproj77804@disco-amphora-422609-j1.iam.gserviceaccount.com",
+  "client_id": "108130872754253473310",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/testproj77804%40disco-amphora-422609-j1.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 239fa60f13d29d44a9e9c6a7f826e1bf, type: 3}
+  m_Name: MapsCatalogue
+  m_EditorClassIdentifier: 
+  MapsPrefabReferences:
+  - MapDefinitionId: Aden
+    MapPrefabReferences:
+      m_AssetGUID: d0dc3733149714d409e581dcc47fd41f
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - MapDefinitionId: Dion
+    MapPrefabReferences:
+      m_AssetGUID: e01ae2f3a7b0ffc44b042d8c5f3f4932
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - MapDefinitionId: Giran
+    MapPrefabReferences:
+      m_AssetGUID: b387de33098e6a2408e4feaaa69c01ca
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - MapDefinitionId: Goddard
+    MapPrefabReferences:
+      m_AssetGUID: 032dc786de8442741bf7d600401cdd4f
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - MapDefinitionId: Heine
+    MapPrefabReferences:
+      m_AssetGUID: 72f3360e8402ed74b92c705ca417f10d
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - MapDefinitionId: Oren
+    MapPrefabReferences:
+      m_AssetGUID: c2972cb8556a9cd47bf95ef27782b227
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - MapDefinitionId: Rune
+    MapPrefabReferences:
+      m_AssetGUID: afebb83fcc5848e42b2d99f1f10e97e8
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - MapDefinitionId: Schuttgart
+    MapPrefabReferences:
+      m_AssetGUID: 3c16f1a4ae697cf42a6d333ec79aa09a
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

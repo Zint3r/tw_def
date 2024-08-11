@@ -1,0 +1,333 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_GUID: c0b79672f9ffbcc4e8a7b7ac6fe62c24
+  m_SerializeEntries:
+  - m_GUID: 032dc786de8442741bf7d600401cdd4f
+    m_Address: Assets/Content/Prefabs/Maps/map_Goddard.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 03c54a3466ab3ba4784d5162923e30c5
+    m_Address: Assets/Content/Prefabs/Enemies/enemy_aden_type_3.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 05e81d033c306ff42ab70383d183c768
+    m_Address: Assets/Content/Sprites/Ui/Textures/ConditionSetting/ConditionSettingAtlas.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 0e33f3555f863394abc5910e8c5f241a
+    m_Address: Assets/Content/Sprites/Ui/Loading/LoadingAtlas.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 12b1017316115f240894423fe05f41a8
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dark_Assassin.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 221ba609982d2a449bcf458214ddb59b
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Human_Wizard.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 240688f8b62a12943b116f1f3a6ca0b9
+    m_Address: Assets/Content/Levels/AbbysA1Background.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2602a9863bd37c64a86a06661904b3e9
+    m_Address: Assets/Content/Ui/Panels/MainControlPanel/MainControlPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 280b6ce1a19b01f47aa3d5e965c1d6e9
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Elven_Scout.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 28dbf8b503f51c94bbd044f37c7c2651
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Orc_Monk.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 322d6cdfd25a5d04d9b9daca2fb30eb0
+    m_Address: Assets/Content/Sprites/Ui/Textures/MainControlPanel/MainControlPanelAtlas.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3745451d186b66a478b9532203e29573
+    m_Address: Assets/Content/Sprites/Ui/Textures/MapSelectPanel/MapSelectPanelAtlas.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c16f1a4ae697cf42a6d333ec79aa09a
+    m_Address: Assets/Content/Prefabs/Maps/map_Schuttgart.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3c8ae02617d324c4ca359b5b0f66264c
+    m_Address: Assets/Content/Prefabs/Enemies/enemy_aden_type_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e4fe09066377424885da8c63ca79852
+    m_Address: Assets/Content/Ui/Panels/StatsControlPanel/EnemySpawnPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3e9916e0947caca41b4938739d2f1207
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Orc_Raider.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3ec9e3ce37196cb4fa45b1d08b7abc30
+    m_Address: Assets/Content/Ui/Panels/MapSelectPanel/MapSelectPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3f258e51274de864a87eeb7b7e2d7d49
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Orc_Shaman.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4f8e023223943284390bc4cf28e9d3fe
+    m_Address: Assets/Content/Ui/Panels/QuickBuildingPanel/QuickBuildingPanelButton.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 507b82f28304e10428d155bfef305c37
+    m_Address: Assets/Content/Ui/Configuration/UiElementColorConfiguration.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 51462dd570a156c4b8541a22c7828aa4
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Elven_Oracle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 521b8b13fee72d44c90bc4127ddb02be
+    m_Address: Assets/Content/Ui/Loading/LoadingScreen.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5e43bb4a978370e45b070103b6bcd669
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dwarf_Scavenger.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 645fc1e83927bb14a9a7158a1b874afb
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dark_Knight.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 661049b060f4db0499e48c5fc072710c
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dwarf_Artisan.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 66d92342a0040dd42a10ac11af51e340
+    m_Address: Assets/Content/Levels/AbbysA2Background.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 672c902a90a8f754196dfa3dbb64b856
+    m_Address: Assets/Content/Prefabs/Cube.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 68c24270b23c4e74688c34387c2ac171
+    m_Address: Assets/Content/Prefabs/map_test.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6e7e4defda6dce142b496c4eeaef818e
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Kamael_Warder.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 72f3360e8402ed74b92c705ca417f10d
+    m_Address: Assets/Content/Prefabs/Maps/map_Heine.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 75992d079dbf5004aac497a6e5122dff
+    m_Address: Assets/Content/Prefabs/Skills/Projectile_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 781677e4c46d9db489a73728ba97c549
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Kamael_Trooper.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 7c5338a99d32b2746a4ef4b097f85a62
+    m_Address: Assets/Content/Sprites/Ui/Textures/Generic/DefaultIcon.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 823b970f3ed73fb4c9d297842ffe9c30
+    m_Address: Assets/Content/Prefabs/Enemies/enemy_empty.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 848bbaaf460722443b2952333ba306f3
+    m_Address: Assets/Content/Ui/Panels/MapSelectPanel/MapBtn.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8919c061fbc8f0c4aa27f102d48d4479
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Human_Rogue.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 95c20dedb6b8b004ebe03d99f691b124
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dark_Wizard.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a97873eefa4165843b1704292e75987b
+    m_Address: Assets/Content/Prefabs/Player/Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a9f2c5194cc74ce41af08ec6225ed33d
+    m_Address: Assets/Content/Ui/Widgets/CurrencyWidget.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: afebb83fcc5848e42b2d99f1f10e97e8
+    m_Address: Assets/Content/Prefabs/Maps/map_Rune.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b387de33098e6a2408e4feaaa69c01ca
+    m_Address: Assets/Content/Prefabs/Maps/map_Giran.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b3cb4f2df1ff446448a6f54f8e7ba82c
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Human_Cleric.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c2972cb8556a9cd47bf95ef27782b227
+    m_Address: Assets/Content/Prefabs/Maps/map_Oren.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c53e8ce8792bd1340b6b7c8580dcd8f0
+    m_Address: Assets/Content/Prefabs/Enemies/enemy_aden_type_1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c593876650f514d4d838418b4b0f64fb
+    m_Address: Assets/Content/Prefabs/Skills/Projectile_2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c920ef7348fc13340b69b12b7ee35097
+    m_Address: Assets/Content/Sprites/Ui/Panels/TopInterfacePanel/TopInterface.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ce48bde5ecf92494db52935540183211
+    m_Address: Assets/Content/Ui/Panels/MenuPanel/MenuPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d0dc3733149714d409e581dcc47fd41f
+    m_Address: Assets/Content/Prefabs/Maps/map_Aden.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d47668f0b133a2246bc256760c120cca
+    m_Address: Assets/Content/Sprites/Ui/Textures/ConditionSetting
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d7988f6c2b6f9674e97a10282e6790e4
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dwarf_Wizard.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d88d575266ce1e844b6fc244b64834d0
+    m_Address: Assets/Content/Ui/Configuration/RarityColorConfiguration.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d8a8e81c02b027b418920d7a252c04e6
+    m_Address: Assets/Content/Sprites/Ui/Textures/Icons/GenericIcons.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d95d8a771df42c14f82189d556d24ecf
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Human_Knight.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d9c65ddb7292aa8419087042b451596c
+    m_Address: Assets/Content/AssetCatalogue/LevelViewsConfiguration.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: dd1f8d79247e23b4081f7e378ccb6fda
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Elven_Knight.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e01ae2f3a7b0ffc44b042d8c5f3f4932
+    m_Address: Assets/Content/Prefabs/Maps/map_Dion.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e4a20f5cab9f92d499b3043005305fe1
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dark_Oracle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7887c9c9f0885341a7b03f1df90a000
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Elven_Wizard.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e7b41cf7ceec42a4c828f37d1299ec69
+    m_Address: Assets/Content/Prefabs/enemy_test.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ef8ccec718b57df45ab0f11746f8889a
+    m_Address: Assets/Content/Ui/Panels/MainControlPanel/MainControlButton.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fd704bbae305f594dbbb8febb58ef462
+    m_Address: Assets/Content/Ui/Panels/QuickBuildingPanel/QuickBuildingPanel.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: fe86a289bc884e843b498e543647f5c2
+    m_Address: Assets/Content/Prefabs/Heroes/hero.class.Human_Warrior.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: b72eff5618b99284aad36ed31720d0d7, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 9f2ca51b5f789d543bb33b995ada69e6, type: 2}
+    - {fileID: 11400000, guid: 23a50932c64c388449de710cc9a12c6f, type: 2}

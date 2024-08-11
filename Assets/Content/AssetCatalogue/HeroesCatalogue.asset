@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e87c0f446c1df4c946160218669efe, type: 3}
+  m_Name: HeroesCatalogue
+  m_EditorClassIdentifier: 
+  HeroesPrefabReferences:
+  - HeroDefinitionId: hero.class.Human_Warrior
+    HeroPrefabReferences:
+      m_AssetGUID: fe86a289bc884e843b498e543647f5c2
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Human_Knight
+    HeroPrefabReferences:
+      m_AssetGUID: d95d8a771df42c14f82189d556d24ecf
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Human_Rogue
+    HeroPrefabReferences:
+      m_AssetGUID: 8919c061fbc8f0c4aa27f102d48d4479
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Human_Wizard
+    HeroPrefabReferences:
+      m_AssetGUID: 221ba609982d2a449bcf458214ddb59b
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Human_Cleric
+    HeroPrefabReferences:
+      m_AssetGUID: b3cb4f2df1ff446448a6f54f8e7ba82c
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Elven_Knight
+    HeroPrefabReferences:
+      m_AssetGUID: dd1f8d79247e23b4081f7e378ccb6fda
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Elven_Scout
+    HeroPrefabReferences:
+      m_AssetGUID: 280b6ce1a19b01f47aa3d5e965c1d6e9
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Elven_Wizard
+    HeroPrefabReferences:
+      m_AssetGUID: e7887c9c9f0885341a7b03f1df90a000
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Elven_Oracle
+    HeroPrefabReferences:
+      m_AssetGUID: 51462dd570a156c4b8541a22c7828aa4
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Dark_Knight
+    HeroPrefabReferences:
+      m_AssetGUID: 645fc1e83927bb14a9a7158a1b874afb
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Dark_Assassin
+    HeroPrefabReferences:
+      m_AssetGUID: 12b1017316115f240894423fe05f41a8
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Dark_Wizard
+    HeroPrefabReferences:
+      m_AssetGUID: 95c20dedb6b8b004ebe03d99f691b124
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Dark_Oracle
+    HeroPrefabReferences:
+      m_AssetGUID: e4a20f5cab9f92d499b3043005305fe1
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Orc_Raider
+    HeroPrefabReferences:
+      m_AssetGUID: 3e9916e0947caca41b4938739d2f1207
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Orc_Monk
+    HeroPrefabReferences:
+      m_AssetGUID: 28dbf8b503f51c94bbd044f37c7c2651
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Orc_Shaman
+    HeroPrefabReferences:
+      m_AssetGUID: 3f258e51274de864a87eeb7b7e2d7d49
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Dwarf_Scavenger
+    HeroPrefabReferences:
+      m_AssetGUID: 5e43bb4a978370e45b070103b6bcd669
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Dwarf_Artisan
+    HeroPrefabReferences:
+      m_AssetGUID: 661049b060f4db0499e48c5fc072710c
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Dwarf_Wizard
+    HeroPrefabReferences:
+      m_AssetGUID: d7988f6c2b6f9674e97a10282e6790e4
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Kamael_Trooper
+    HeroPrefabReferences:
+      m_AssetGUID: 781677e4c46d9db489a73728ba97c549
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0
+  - HeroDefinitionId: hero.class.Kamael_Warder
+    HeroPrefabReferences:
+      m_AssetGUID: 6e7e4defda6dce142b496c4eeaef818e
+      m_SubObjectName: 
+      m_SubObjectGUID: 
+      m_SubObjectType: 
+      m_EditorAssetChanged: 0

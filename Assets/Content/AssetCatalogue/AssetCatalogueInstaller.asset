@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a47de338ff42d543939a956802d5af3, type: 3}
+  m_Name: AssetCatalogueInstaller
+  m_EditorClassIdentifier: 
+  prefabsCatalogue: {fileID: 11400000, guid: eb9f7c6ca05ae4e40bd45d53f795a4c8, type: 2}
+  mapsCatalogue: {fileID: 11400000, guid: bdaf9b2505ce85342b4ce2c7afe8c2c1, type: 2}
+  enemiesCatalogue: {fileID: 11400000, guid: f638f4bf25cff7748beb8a0395b47258, type: 2}
+  heroesCatalogue: {fileID: 11400000, guid: 1ea21023589896146bf506f8236cc452, type: 2}
+  attackEffectCatalogue: {fileID: 11400000, guid: f502019416d4fae41a6f4e9b062bf4fb, type: 2}
+  uiPrefabsCatalogue: {fileID: 11400000, guid: 2bbb1a7921677a74ca0b91c47fc21ff7, type: 2}
+  SpriteSheetCatalogue: {fileID: 11400000, guid: 9904d702c3b7d664c8a7ab3f69120a95, type: 2}
+  uiConfigurationsCatalogue: {fileID: 11400000, guid: f2b554e2da12eb448be2b8324d736c02, type: 2}
+  levelViewSettingsCatalogue: {fileID: 11400000, guid: 49fc1eadac55ca84bb001fca98889ab7, type: 2}
