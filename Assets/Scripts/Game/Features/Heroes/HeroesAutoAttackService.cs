@@ -1,40 +1,32 @@
 using Core.CoroutineProvider;
 using Core.MessageHub;
 using Game.Features.Enemy;
-using Game.Features.GameDesign;
-using Game.Features.GameDesign.DefinitionObjects.AttackEffect;
 using Game.Features.HeroBuilding;
-using Game.UI.Factories;
-using Module.GameObjectInstaller.Pool;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
-using Random = UnityEngine.Random;
 
 namespace Game.Features.Heroes
 {
+	[Serializable]
+	public struct HeroDamageInfo
+	{
+		public int  Damage;
+		public bool IsCrit;
+	}
 	public interface IHeroesAutoAttackService
 	{
 
 	}
-	public class HeroesAutoAttackService : IHeroesAutoAttackService
-	{/*
+	public class HeroesAutoAttackService : IHeroesAutoAttackService, IInitializable, IDisposable
+	{
 		[Inject]
 		private ICoroutineService coroutineService;
 
 		[Inject]
 		private IMessageHubService messageHubService;
-
-		[Inject]
-		private GameObjectFactory gameObjectFactory;
-
-		[Inject]
-		private GameDefinitionModel gameDefinitionModel;
-
-		[Inject]
-		private GoPool pool;
 
 		private WaitForSeconds waitForHeroAttack = new WaitForSeconds(Time.fixedDeltaTime);
 		private List<GameObject> heroes = new List<GameObject>();
@@ -57,9 +49,30 @@ namespace Game.Features.Heroes
 			heroPresenters.Add(message.HeroGO.GetComponent<HeroPresenter>());
 			currentTimersToAttack.Add(0f);
 		}
-		private int CalculateDamage(HeroVO heroVO)
+		private HeroDamageInfo CalculateDamage(HeroVO heroVO)
 		{
-			return Random.Range(heroVO.MinDamage, heroVO.MinDamage);
+			HeroDamageInfo heroDamageInfo = new HeroDamageInfo();
+			bool isCrit = CheckCritChance(heroVO.CritChance);
+			int randomDamage = UnityEngine.Random.Range(heroVO.MinDamage, heroVO.MaxDamage + 1);
+			if (isCrit == true)
+			{
+				randomDamage = (int)(randomDamage * heroVO.CritMulti);
+			}
+			heroDamageInfo.Damage = randomDamage;
+			heroDamageInfo.IsCrit = isCrit;
+			return heroDamageInfo;
+		}
+		private bool CheckCritChance(float chance)
+		{
+			float randomChance = UnityEngine.Random.Range(0f,100f);
+			if (chance > randomChance)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
 		}
 		private IEnumerator HeroesAttack()
 		{
@@ -78,12 +91,7 @@ namespace Game.Features.Heroes
 									if (Vector3.Distance(heroes[i].transform.position, heroPresenters[i].EnemyList[j].position) < heroPresenters[i].Radius)
 									{
 										currentTimersToAttack[i] = 0f;
-										AttackEffectDefinition definition = gameDefinitionModel.GetOrCreate<AttackEffectDefinition>(AttackEffectCollectionConstants.AttackEffect_1);
-										GameObject go = gameObjectFactory.GetGameObjectByDefinition(definition);
-										GameObject attackEffect = pool.GetPooledPrefab(go, heroes[i].transform.position, Quaternion.identity);
-										ProjectilePresenter projectilePresenter;
-										attackEffect.TryGetComponent(out projectilePresenter);
-										projectilePresenter.OnStart(heroPresenters[i].EnemyList[j], CalculateDamage(heroPresenters[i].Hero));
+										messageHubService.Publish(new HeroCollectionMessages.HeroAttackMessage(heroPresenters[i].EnemyList[j], heroes[i].transform.position, CalculateDamage(heroPresenters[i].Hero)));
 										break;
 									}
 									else
@@ -105,6 +113,6 @@ namespace Game.Features.Heroes
 				}
 				yield return waitForHeroAttack;
 			}
-		}*/
+		}
 	}
 }

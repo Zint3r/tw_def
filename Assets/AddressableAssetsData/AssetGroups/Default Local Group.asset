@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
   m_Name: Default Local Group
   m_EditorClassIdentifier: 
-  m_GroupName: Default Local Group
-  m_GUID: c0b79672f9ffbcc4e8a7b7ac6fe62c24
+  m_GroupName: 5dea390931307fa4e84d83a14112ac8b
+  m_GUID: 5dea390931307fa4e84d83a14112ac8b
   m_SerializeEntries:
   - m_GUID: 032dc786de8442741bf7d600401cdd4f
     m_Address: Assets/Content/Prefabs/Maps/map_Goddard.prefab
@@ -25,18 +25,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 05e81d033c306ff42ab70383d183c768
-    m_Address: Assets/Content/Sprites/Ui/Textures/ConditionSetting/ConditionSettingAtlas.spriteatlasv2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 0e33f3555f863394abc5910e8c5f241a
-    m_Address: Assets/Content/Sprites/Ui/Loading/LoadingAtlas.spriteatlasv2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 12b1017316115f240894423fe05f41a8
     m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dark_Assassin.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 133dc9af4ec130c45bf1cea17cfd2fd1
+    m_Address: Assets/Content/Sprites/Atlases/loading_atlas.spriteatlasv2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -62,16 +57,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 28dbf8b503f51c94bbd044f37c7c2651
     m_Address: Assets/Content/Prefabs/Heroes/hero.class.Orc_Monk.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 322d6cdfd25a5d04d9b9daca2fb30eb0
-    m_Address: Assets/Content/Sprites/Ui/Textures/MainControlPanel/MainControlPanelAtlas.spriteatlasv2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 3745451d186b66a478b9532203e29573
-    m_Address: Assets/Content/Sprites/Ui/Textures/MapSelectPanel/MapSelectPanelAtlas.spriteatlasv2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -102,11 +87,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 3f258e51274de864a87eeb7b7e2d7d49
     m_Address: Assets/Content/Prefabs/Heroes/hero.class.Orc_Shaman.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 4f8e023223943284390bc4cf28e9d3fe
-    m_Address: Assets/Content/Ui/Panels/QuickBuildingPanel/QuickBuildingPanelButton.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -145,16 +125,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 672c902a90a8f754196dfa3dbb64b856
-    m_Address: Assets/Content/Prefabs/Cube.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 68c24270b23c4e74688c34387c2ac171
-    m_Address: Assets/Content/Prefabs/map_test.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6e7e4defda6dce142b496c4eeaef818e
     m_Address: Assets/Content/Prefabs/Heroes/hero.class.Kamael_Warder.prefab
     m_ReadOnly: 0
@@ -175,8 +145,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 7c5338a99d32b2746a4ef4b097f85a62
-    m_Address: Assets/Content/Sprites/Ui/Textures/Generic/DefaultIcon.png
+  - m_GUID: 8202ad17c7157d74b9de95c1b24046b8
+    m_Address: Assets/Content/Sprites/Atlases/condition_setting_atlas.spriteatlasv2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -185,8 +155,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 848bbaaf460722443b2952333ba306f3
-    m_Address: Assets/Content/Ui/Panels/MapSelectPanel/MapBtn.prefab
+  - m_GUID: 8632b8b6663b96d4e8a8b0900ad0ab0d
+    m_Address: Assets/Content/Sprites/Atlases/main_control_panel_atlas.spriteatlasv2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -205,13 +175,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: a9f2c5194cc74ce41af08ec6225ed33d
-    m_Address: Assets/Content/Ui/Widgets/CurrencyWidget.prefab
+  - m_GUID: afebb83fcc5848e42b2d99f1f10e97e8
+    m_Address: Assets/Content/Prefabs/Maps/map_Rune.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: afebb83fcc5848e42b2d99f1f10e97e8
-    m_Address: Assets/Content/Prefabs/Maps/map_Rune.prefab
+  - m_GUID: b18e08b589a72e64d8afe42dba1165cd
+    m_Address: Assets/Content/Sprites/Atlases/generic_icons_atlas.spriteatlasv2
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -240,8 +210,13 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c5fbedf144f995b448530c98da4167ea
+    m_Address: Assets/Content/Sprites/Atlases/map_select_panel_atlas.spriteatlasv2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c920ef7348fc13340b69b12b7ee35097
-    m_Address: Assets/Content/Sprites/Ui/Panels/TopInterfacePanel/TopInterface.prefab
+    m_Address: Assets/Content/Ui/Panels/TopInterfacePanel/TopInterface.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -255,11 +230,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d47668f0b133a2246bc256760c120cca
-    m_Address: Assets/Content/Sprites/Ui/Textures/ConditionSetting
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d7988f6c2b6f9674e97a10282e6790e4
     m_Address: Assets/Content/Prefabs/Heroes/hero.class.Dwarf_Wizard.prefab
     m_ReadOnly: 0
@@ -270,18 +240,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d8a8e81c02b027b418920d7a252c04e6
-    m_Address: Assets/Content/Sprites/Ui/Textures/Icons/GenericIcons.spriteatlasv2
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d95d8a771df42c14f82189d556d24ecf
     m_Address: Assets/Content/Prefabs/Heroes/hero.class.Human_Knight.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: d9c65ddb7292aa8419087042b451596c
-    m_Address: Assets/Content/AssetCatalogue/LevelViewsConfiguration.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -305,16 +265,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e7b41cf7ceec42a4c828f37d1299ec69
-    m_Address: Assets/Content/Prefabs/enemy_test.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: ef8ccec718b57df45ab0f11746f8889a
-    m_Address: Assets/Content/Ui/Panels/MainControlPanel/MainControlButton.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: fd704bbae305f594dbbb8febb58ef462
     m_Address: Assets/Content/Ui/Panels/QuickBuildingPanel/QuickBuildingPanel.prefab
     m_ReadOnly: 0
@@ -329,5 +279,5 @@ MonoBehaviour:
   m_Settings: {fileID: 11400000, guid: b72eff5618b99284aad36ed31720d0d7, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 9f2ca51b5f789d543bb33b995ada69e6, type: 2}
-    - {fileID: 11400000, guid: 23a50932c64c388449de710cc9a12c6f, type: 2}
+    - {fileID: 11400000, guid: 82be1edba42db1340ad246f58027d9a2, type: 2}
+    - {fileID: 11400000, guid: e1245171090bc5e489f7eaf908a07999, type: 2}

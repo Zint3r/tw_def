@@ -33,9 +33,9 @@ namespace Game.Context
 
 			ActionsInstaller.Install(Container);
 
-			
+			UiServiceInstaller.Install(Container);
 
-			UiServiceInstaller.Install(Container);			
+						
 
 			GameStateInstaller.Install(Container);
 

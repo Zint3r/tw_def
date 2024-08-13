@@ -3,7 +3,6 @@ using Game.AssetCatalogue;
 using Game.Features.GameDesign;
 using Game.Features.GameDesign.DefinitionObjects.Heroes;
 using Game.Features.GameDesign.DefinitionObjects.Map;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

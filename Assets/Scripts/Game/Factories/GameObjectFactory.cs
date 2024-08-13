@@ -55,32 +55,32 @@ namespace Game.UI.Factories
 				AddressablesHelper.LoadAssetAsync<GameObject>(enemiesCatalogue.GetEnemyPrefabReference("enemy_aden_type_2"), op => { enemiesGo.Add("enemy_aden_type_2", op.Result); }),
 				AddressablesHelper.LoadAssetAsync<GameObject>(enemiesCatalogue.GetEnemyPrefabReference("enemy_aden_type_3"), op => { enemiesGo.Add("enemy_aden_type_3", op.Result); }),
 
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Human_Warrior), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Warrior, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Human_Knight), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Knight, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Human_Rogue), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Rogue, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Human_Wizard), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Wizard, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Human_Cleric), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Cleric, op.Result); }),
-				//
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Elven_Knight), op => { heroesGo.Add(HeroCollectionConstants.Class_Elven_Knight, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Elven_Scout), op => { heroesGo.Add(HeroCollectionConstants.Class_Elven_Scout, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Elven_Wizard), op => { heroesGo.Add(HeroCollectionConstants.Class_Elven_Wizard, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Elven_Oracle), op => { heroesGo.Add(HeroCollectionConstants.Class_Elven_Oracle, op.Result); }),
-				//
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Dark_Knight), op => { heroesGo.Add(HeroCollectionConstants.Class_Dark_Knight, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Dark_Assassin), op => { heroesGo.Add(HeroCollectionConstants.Class_Dark_Assassin, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Dark_Wizard), op => { heroesGo.Add(HeroCollectionConstants.Class_Dark_Wizard, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Dark_Oracle), op => { heroesGo.Add(HeroCollectionConstants.Class_Dark_Oracle, op.Result); }),
-				//
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Orc_Raider), op => { heroesGo.Add(HeroCollectionConstants.Class_Orc_Raider, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Orc_Monk), op => { heroesGo.Add(HeroCollectionConstants.Class_Orc_Monk, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Orc_Shaman), op => { heroesGo.Add(HeroCollectionConstants.Class_Orc_Shaman, op.Result); }),
-				//
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Dwarf_Scavenger), op => { heroesGo.Add(HeroCollectionConstants.Class_Dwarf_Scavenger, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Dwarf_Artisan), op => { heroesGo.Add(HeroCollectionConstants.Class_Dwarf_Artisan, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Dwarf_Wizard), op => { heroesGo.Add(HeroCollectionConstants.Class_Dwarf_Wizard, op.Result); }),
-				//
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Kamael_Trooper), op => { heroesGo.Add(HeroCollectionConstants.Class_Kamael_Trooper, op.Result); }),
-				//AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetEnemyPrefabReference(HeroCollectionConstants.Class_Kamael_Warder), op => { heroesGo.Add(HeroCollectionConstants.Class_Kamael_Warder, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Human_Warrior), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Warrior, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Human_Knight), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Knight, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Human_Rogue), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Rogue, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Human_Wizard), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Wizard, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Human_Cleric), op => { heroesGo.Add(HeroCollectionConstants.Class_Human_Cleric, op.Result); }),
+				
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Elven_Knight), op => { heroesGo.Add(HeroCollectionConstants.Class_Elven_Knight, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Elven_Scout), op => { heroesGo.Add(HeroCollectionConstants.Class_Elven_Scout, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Elven_Wizard), op => { heroesGo.Add(HeroCollectionConstants.Class_Elven_Wizard, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Elven_Oracle), op => { heroesGo.Add(HeroCollectionConstants.Class_Elven_Oracle, op.Result); }),
+				
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Dark_Knight), op => { heroesGo.Add(HeroCollectionConstants.Class_Dark_Knight, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Dark_Assassin), op => { heroesGo.Add(HeroCollectionConstants.Class_Dark_Assassin, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Dark_Wizard), op => { heroesGo.Add(HeroCollectionConstants.Class_Dark_Wizard, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Dark_Oracle), op => { heroesGo.Add(HeroCollectionConstants.Class_Dark_Oracle, op.Result); }),
+				
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Orc_Raider), op => { heroesGo.Add(HeroCollectionConstants.Class_Orc_Raider, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Orc_Monk), op => { heroesGo.Add(HeroCollectionConstants.Class_Orc_Monk, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Orc_Shaman), op => { heroesGo.Add(HeroCollectionConstants.Class_Orc_Shaman, op.Result); }),
+				
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Dwarf_Scavenger), op => { heroesGo.Add(HeroCollectionConstants.Class_Dwarf_Scavenger, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Dwarf_Artisan), op => { heroesGo.Add(HeroCollectionConstants.Class_Dwarf_Artisan, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Dwarf_Wizard), op => { heroesGo.Add(HeroCollectionConstants.Class_Dwarf_Wizard, op.Result); }),
+				
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Kamael_Trooper), op => { heroesGo.Add(HeroCollectionConstants.Class_Kamael_Trooper, op.Result); }),
+				AddressablesHelper.LoadAssetAsync<GameObject>(heroesCatalogue.GetHeroPrefabReference(HeroCollectionConstants.Class_Kamael_Warder), op => { heroesGo.Add(HeroCollectionConstants.Class_Kamael_Warder, op.Result); }),
 
 				AddressablesHelper.LoadAssetAsync<GameObject>(attackEffectCatalogue.GetAttackEffectPrefabReference(AttackEffectCollectionConstants.AttackEffect_1), op => { attackEffectsGo.Add(AttackEffectCollectionConstants.AttackEffect_1, op.Result); }),
 				AddressablesHelper.LoadAssetAsync<GameObject>(attackEffectCatalogue.GetAttackEffectPrefabReference(AttackEffectCollectionConstants.AttackEffect_2), op => { attackEffectsGo.Add(AttackEffectCollectionConstants.AttackEffect_2, op.Result); }),

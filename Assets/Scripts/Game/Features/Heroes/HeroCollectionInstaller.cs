@@ -8,6 +8,8 @@ namespace Game.Features.Heroes
 		{
 			Container.BindInterfacesAndSelfTo<HeroCollectionService>().AsSingle();
 			Container.BindInterfacesAndSelfTo<HeroCollectionModel>().AsSingle();
+			Container.BindInterfacesAndSelfTo<HeroesAutoAttackService>().AsSingle();
+			Container.BindInterfacesAndSelfTo<ProjectilesService>().AsSingle();
 		}
 	}
 }

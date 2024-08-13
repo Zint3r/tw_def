@@ -12,6 +12,7 @@ namespace Game.Features.Heroes
 		public int MaxDamage;
 		public float AttackSpeed;
 		public float CritChance;
+		public float CritMulti;
 		public int Price;
 
 		public HeroClassDefinition HeroDefinition;
@@ -26,10 +27,11 @@ namespace Game.Features.Heroes
 				HeroDefinition = HeroClassDefinition.Empty,
 				Id = 0,
 				LocalizationId = 0,
-				MinDamage = 0,
-				MaxDamage = 0,
-				AttackSpeed = 0,
-				CritChance = 0,
+				MinDamage = 1,
+				MaxDamage = 2,
+				AttackSpeed = 1,
+				CritChance = 5f,
+				CritMulti = 2f,
 				Price = 1
 			};
 	}

@@ -13,32 +13,32 @@ MonoBehaviour:
   m_Name: SpriteSheetCatalogue
   m_EditorClassIdentifier: 
   LoadingIconAtlas:
-    m_AssetGUID: 0e33f3555f863394abc5910e8c5f241a
+    m_AssetGUID: 133dc9af4ec130c45bf1cea17cfd2fd1
     m_SubObjectName: 
     m_SubObjectGUID: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   ResourceIconAtlas:
-    m_AssetGUID: 7c5338a99d32b2746a4ef4b097f85a62
+    m_AssetGUID: b18e08b589a72e64d8afe42dba1165cd
     m_SubObjectName: 
     m_SubObjectGUID: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   ConditionSettingIconAtlas:
-    m_AssetGUID: 05e81d033c306ff42ab70383d183c768
+    m_AssetGUID: 8202ad17c7157d74b9de95c1b24046b8
     m_SubObjectName: 
     m_SubObjectGUID: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   MainControlPanelAtlas:
-    m_AssetGUID: 322d6cdfd25a5d04d9b9daca2fb30eb0
+    m_AssetGUID: 8632b8b6663b96d4e8a8b0900ad0ab0d
     m_SubObjectName: 
     m_SubObjectGUID: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
   MapSelectPanelAtlas:
-    m_AssetGUID: 3745451d186b66a478b9532203e29573
+    m_AssetGUID: c5fbedf144f995b448530c98da4167ea
     m_SubObjectName: 
     m_SubObjectGUID: 
     m_SubObjectType: 
-    m_EditorAssetChanged: 0
+    m_EditorAssetChanged: 1

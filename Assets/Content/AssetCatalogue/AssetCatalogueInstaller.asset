@@ -18,6 +18,6 @@ MonoBehaviour:
   heroesCatalogue: {fileID: 11400000, guid: 1ea21023589896146bf506f8236cc452, type: 2}
   attackEffectCatalogue: {fileID: 11400000, guid: f502019416d4fae41a6f4e9b062bf4fb, type: 2}
   uiPrefabsCatalogue: {fileID: 11400000, guid: 2bbb1a7921677a74ca0b91c47fc21ff7, type: 2}
-  SpriteSheetCatalogue: {fileID: 11400000, guid: 9904d702c3b7d664c8a7ab3f69120a95, type: 2}
+  SpriteSheetCatalogue: {fileID: 11400000, guid: 3c208a3f1e32a094187e294410ad95ad, type: 2}
   uiConfigurationsCatalogue: {fileID: 11400000, guid: f2b554e2da12eb448be2b8324d736c02, type: 2}
   levelViewSettingsCatalogue: {fileID: 11400000, guid: 49fc1eadac55ca84bb001fca98889ab7, type: 2}

@@ -29,7 +29,6 @@ public class HeroPresenter : MonoBehaviour
 	}
 	private void OnTriggerEnter(Collider other)
 	{
-		EnemyList.Add(other.transform);
 		if (other.TryGetComponent(out EnemyPresenter enemy) == true)
         {
 			EnemyList.Add(other.transform);

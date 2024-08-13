@@ -1,60 +1,58 @@
-using DG.Tweening;
 using Game.Features.Enemy;
+using Module.GameObjectInstaller.Pool;
 using UnityEngine;
 
-public class ProjectilePresenter : MonoBehaviour
+namespace Game.Features.Skills
 {
-	private Transform targetPosition;
-	private float timeLeft;
-	private int damage = 0;
-	private bool IsGetDamage = false;
+	public class ProjectilePresenter : MonoBehaviour
+	{
+		[SerializeField]
+		private ParticleSystem targetParticleSystem;
 
-	[SerializeField]
-	private ParticleSystem targetParticleSystem;
+		private int damage = 0;
+		private bool IsGetDamage = false;
+		private EnemyPresenter enemyPresenter;
 
-	private EnemyPresenter enemyPresenter;
-
-	public void OnStart(Transform target, int damage)
-    {
-		//targetParticleSystem = GetComponent<ParticleSystem>();
-		this.damage = damage;
-		targetPosition = target;
-		timeLeft = targetParticleSystem.main.startLifetime.constant;
-
-		enemyPresenter = targetPosition.GetComponent<EnemyPresenter>();
-
-		//transform.DOMove(target, 0.5f);
-		//transform.DOJump(target, 5f, 1, 0.5f, true);
-	}    
-    private void FixedUpdate()
-    {
-		//transform.DOMove(targetPosition.position, 0.5f);
-		//Debug.Log(Vector3.Distance(transform.position, targetPosition.position));
-		if (Vector3.Distance(transform.position, targetPosition.position) > 0.2f)
+		public void OnStart(Transform target, int damage)
 		{
-
-			transform.position = Vector3.MoveTowards(transform.position, targetPosition.position, 25f * Time.deltaTime);
+			this.damage = damage;
+			IsGetDamage = false;
+			GetComponent<MeshRenderer>().enabled = true;
+			enemyPresenter = target.GetComponent<EnemyPresenter>();
 		}
-		else if (targetParticleSystem.isPlaying == false)
+		public float GetLifeTime()
+		{
+			return targetParticleSystem.main.startLifetime.constant;
+		}
+		public void ReturnToPool()
+		{
+			enemyPresenter = null;
+			if (TryGetComponent(out GoPoolMember poolMember) == true)
+			{
+				poolMember.ReturnToPool();
+			}
+		}
+		public bool GetParticleSystemInfo()
+		{
+			return targetParticleSystem.isPlaying;
+		}
+		public void PlayParticleSystem()
 		{
 			targetParticleSystem.Play();
+			GetComponent<MeshRenderer>().enabled = false;
+			Invoke("ReturnToPool", GetLifeTime());
+		}
+		public void DealDamageToEnemy()
+		{
 			if (IsGetDamage == false)
 			{
 				IsGetDamage = true;
-
+				PlayParticleSystem();
 				if (enemyPresenter != null)
 				{
 					enemyPresenter.TakeDamage(damage);
 				}
 			}
-		}
-		else if (timeLeft > 0)
-		{
-			timeLeft -= 0.02f;
-		}
-		else
-		{
-			Destroy(gameObject);
 		}
 	}
 }

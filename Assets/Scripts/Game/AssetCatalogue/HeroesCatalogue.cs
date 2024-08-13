@@ -18,17 +18,7 @@ namespace Game.AssetCatalogue
 	{
 		public List<HeroPrefabReference> HeroesPrefabReferences;
 
-		public List<AssetReference> GetAllMaps()
-		{
-			List<AssetReference> heroes = new List<AssetReference>();
-			foreach (var hero in HeroesPrefabReferences)
-			{
-				heroes.Add(hero.HeroPrefabReferences);
-			}
-			return heroes;
-		}
-
-		public AssetReference GetEnemyPrefabReference(string definitionId)
+		public AssetReference GetHeroPrefabReference(string definitionId)
 		{
 			return HeroesPrefabReferences.FirstOrDefault(x => x.HeroDefinitionId == definitionId)?.HeroPrefabReferences;
 		}

@@ -1,5 +1,6 @@
 using Core;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Game.Features.Heroes
 {
@@ -22,6 +23,21 @@ namespace Game.Features.Heroes
 			public HeroUpdatedMessage(HeroVO hero)
 			{
 				Hero = hero;
+			}
+		}
+
+		public class HeroAttackMessage : IMessage
+		{
+			public Transform TargetTransform { get; }
+			public Vector3 HeroPosition { get; }
+			public HeroDamageInfo HeroDamageInfo { get; }
+			public bool IsCrit { get; }
+
+			public HeroAttackMessage(Transform target, Vector3 heroPosition, HeroDamageInfo heroDamageInfo)
+			{
+				TargetTransform = target;
+				HeroPosition = heroPosition;
+				HeroDamageInfo = heroDamageInfo;
 			}
 		}
 
