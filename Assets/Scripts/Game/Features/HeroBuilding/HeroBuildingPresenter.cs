@@ -28,6 +28,9 @@ namespace Game.Features.HeroBuilding
 		[Inject]
 		private PlayerControlInput playerControlInput;
 
+		[Inject]
+		private HeroCollectionModel heroCollectionModel;
+
 		[SerializeField]
 		private GameObject buldingObj;
 
@@ -46,7 +49,6 @@ namespace Game.Features.HeroBuilding
 		{
 			heroClassVO = HeroClassVO.Empty;
 			messageHubService.Subscribe<HeroBuildingMessages.HeroTryBuildingMessage>(OnHeroTryBuilding);
-			//buldingObj.SetActive(false);
 			camera = Camera.main;
 		}
 		private void OnDestroy()
@@ -56,8 +58,7 @@ namespace Game.Features.HeroBuilding
 		private void OnHeroTryBuilding(HeroBuildingMessages.HeroTryBuildingMessage message)
 		{
 			heroClassVO = message.HeroClassVO;
-			playerControlInput.OnLeftMouseButtonContext += BuldinHero;
-			Debug.Log(message.HeroClassVO.HeroClassDefinition + " selected");			
+			playerControlInput.OnLeftMouseButtonContext += BuldinHero;			
 			GameObject heroGO = gameObjectFactory.GetGameObjectByDefinition(message.HeroClassVO.HeroClassDefinition);
 			tempHero = pool.GetPooledPrefab(heroGO, new Vector3(0, 0, 0), Quaternion.identity);
 			tempHero.transform.position = new Vector3(9999, 9999, 9999);
@@ -76,6 +77,14 @@ namespace Game.Features.HeroBuilding
 			{
 				SetMaterial(tempHero, 1f);
 				tempHero.GetComponent<HeroPresenter>().OnStart(heroClassVO);
+				HeroVO heroVO = heroCollectionModel.GetHero(heroClassVO.HeroClassDefinition);
+				heroVO.Id = heroCollectionModel.CurrentUniqueHeroID;
+				heroCollectionModel.CurrentUniqueHeroID++;
+				HeroStatsInfo heroStats = new HeroStatsInfo();
+				heroStats.HeroTransform = tempHero.transform;
+				heroStats.HeroPresenter = tempHero.GetComponent<HeroPresenter>();
+				heroStats.HeroVO = heroVO;
+				heroCollectionModel.AddHeroOnScene(heroStats);
 				messageHubService.Publish(new HeroBuildingMessages.OnCompleteHeroBuildingMessage(true, tempHero));
 				tempHero = null;
 				heroClassVO = HeroClassVO.Empty;

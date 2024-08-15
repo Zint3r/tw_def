@@ -8,6 +8,7 @@ namespace Game.Features.Enemy
 		{
 			Container.BindInterfacesAndSelfTo<EnemySpawnerService>().AsSingle();
 			Container.BindInterfacesAndSelfTo<EnemyReciveDamageService>().AsSingle();
+			Container.BindInterfacesAndSelfTo<EnemyMoveService>().AsSingle();
 			Container.BindInterfacesAndSelfTo<EnemyesModel>().AsSingle();
 		}
 	}

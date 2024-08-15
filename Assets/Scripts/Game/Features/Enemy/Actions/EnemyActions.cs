@@ -51,7 +51,7 @@ namespace Game.Features.Enemy
 		}
 		protected override void UpdateModel(EnemySpawnerParams actionParams, DateTime timeStamp)
 		{
-			messageHubService.Publish(new EnemyMessages.SpawnMessage(actionParams.EnemyVO));
+			//messageHubService.Publish(new EnemyMessages.SpawnMessage(actionParams.EnemyVO));
 		}
 	}
 
@@ -77,7 +77,7 @@ namespace Game.Features.Enemy
 		}
 		protected override void UpdateModel(EnemyReciveDamageParams actionParams, DateTime timeStamp)
 		{
-			messageHubService.Publish(new EnemyMessages.EnemyReciveDamageMessage(actionParams.Damage, actionParams.EnemyID));
+			//messageHubService.Publish(new EnemyMessages.EnemyReciveDamageMessage(actionParams.Damage, actionParams.EnemyID));
 		}
 	}
 

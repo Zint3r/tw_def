@@ -1,4 +1,3 @@
-using Game.Features.Enemy;
 using Module.GameObjectInstaller.Pool;
 using UnityEngine;
 
@@ -8,17 +7,12 @@ namespace Game.Features.Skills
 	{
 		[SerializeField]
 		private ParticleSystem targetParticleSystem;
+		private MeshRenderer meshRenderer;
 
-		private int damage = 0;
-		private bool IsGetDamage = false;
-		private EnemyPresenter enemyPresenter;
-
-		public void OnStart(Transform target, int damage)
+		public void OnStart()
 		{
-			this.damage = damage;
-			IsGetDamage = false;
-			GetComponent<MeshRenderer>().enabled = true;
-			enemyPresenter = target.GetComponent<EnemyPresenter>();
+			if (meshRenderer == null) { meshRenderer = GetComponent<MeshRenderer>(); }
+			meshRenderer.enabled = true;
 		}
 		public float GetLifeTime()
 		{
@@ -26,7 +20,6 @@ namespace Game.Features.Skills
 		}
 		public void ReturnToPool()
 		{
-			enemyPresenter = null;
 			if (TryGetComponent(out GoPoolMember poolMember) == true)
 			{
 				poolMember.ReturnToPool();
@@ -39,20 +32,8 @@ namespace Game.Features.Skills
 		public void PlayParticleSystem()
 		{
 			targetParticleSystem.Play();
-			GetComponent<MeshRenderer>().enabled = false;
+			meshRenderer.enabled = false;
 			Invoke("ReturnToPool", GetLifeTime());
-		}
-		public void DealDamageToEnemy()
-		{
-			if (IsGetDamage == false)
-			{
-				IsGetDamage = true;
-				PlayParticleSystem();
-				if (enemyPresenter != null)
-				{
-					enemyPresenter.TakeDamage(damage);
-				}
-			}
 		}
 	}
 }

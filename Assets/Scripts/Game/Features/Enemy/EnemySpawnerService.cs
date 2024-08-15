@@ -6,8 +6,8 @@ using Module.GameObjectInstaller.Pool;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
+using UnityEngine.AI;
 using Zenject;
 
 namespace Game.Features.Enemy
@@ -17,7 +17,6 @@ namespace Game.Features.Enemy
 		void InitializeEnemyWaves(Dictionary<string, List<EnemyWaveVO>> enemyWaves);
 		void EnableSpawner(bool enable);
 	}
-
 	public class EnemySpawnerService : IEnemySpawnerService, IInitializable, IDisposable
 	{
 		[Inject]
@@ -34,8 +33,6 @@ namespace Game.Features.Enemy
 
 		[Inject]
 		private GoPool pool;
-
-		private List<EnemyPresenter> enemies = new List<EnemyPresenter>();
 
 		public void Initialize()
 		{
@@ -58,18 +55,20 @@ namespace Game.Features.Enemy
 		}
 		public void RemoveEnemy(EnemyMessages.EnemyDeadMessage message)
 		{
-			EnemyPresenter enemyPresenter = enemies.Where(i => i.EnemyId == message.EnemyId).FirstOrDefault();
+			EnemyPresenter enemyPresenter = enemyesModel.GetEnemyById(message.EnemyId).EnemyPresenter;
 			enemyPresenter.EnemyDead();
+			enemyesModel.RemoveEnemyOnScene(message.EnemyId);
 		}
 		private IEnumerator SpawnEnemy()
 		{
 			string mapName = DPL.MapCreatorDataProvider.GetSelectedMap();
+			bool enableSpawn = DPL.EnemyDataProvider.GetSpawnEnable();
 			List<EnemyWaveVO> enemyWaves = enemyesModel.GetWavesByMapName(mapName);
 
 			for (int i = 0; i < enemyWaves.Count; i++)
 			{
 				EnemyWaveVO enemyWave = enemyWaves[i];
-				if (enemyWave.WaveId != -1)
+				if (enemyWave.WaveId != -1 && enableSpawn == true)
 				{
 					List<EnemyVO> enemyes = enemyWave.EnemyList;
 					foreach (EnemyVO enemy in enemyes)
@@ -77,22 +76,23 @@ namespace Game.Features.Enemy
 						EnemyVO enemyTemp = enemy;
 						enemyTemp.Id = enemyesModel.CurrentUniqueEnemyID;
 						enemyesModel.CurrentUniqueEnemyID++;
-						messageHubService.Publish(new EnemyMessages.SpawnMessage(enemyTemp));
-						enemyesModel.AddEnemyToScene(enemyTemp);
+						GameObject go = gameObjectFactory.GetGameObjectByDefinition(enemyTemp.EnemyDefinition);
+						GameObject enemyGO = pool.GetPooledPrefab(go, enemyTemp.MovePoints[0].PointPosition, Quaternion.identity);
+						enemyGO.transform.position = enemyTemp.MovePoints[0].PointPosition;
 
-						bool enableSpawn = DPL.EnemyDataProvider.GetSpawnEnable();
-						if (enableSpawn == true)
+						if (enemyGO.TryGetComponent(out EnemyPresenter enemyPresenter) == true)
 						{
-							GameObject go = gameObjectFactory.GetGameObjectByDefinition(enemyTemp.EnemyDefinition);
-							GameObject enemyGO = pool.GetPooledPrefab(go, enemyTemp.MovePoints[0].PointPosition, Quaternion.identity);
-							enemyGO.transform.position = enemyTemp.MovePoints[0].PointPosition;
-							if (enemyGO.TryGetComponent(out EnemyPresenter enemyPresenter) == true)
-							{
-								enemies.Add(enemyPresenter);
-								enemyPresenter.OnStart(enemyTemp);
-							}
-						}
+							EnemyStatsInfo newEnemy = new EnemyStatsInfo();
+							newEnemy.EnemyTransform = enemyGO.transform;
+							newEnemy.EnemyPresenter = enemyGO.transform.GetComponent<EnemyPresenter>();
+							newEnemy.NavMeshAgent = enemyGO.transform.GetComponent<NavMeshAgent>();
+							newEnemy.NavMeshAgent.speed = enemyTemp.Speed;
+							newEnemy.EnemyVO = enemyTemp;
 
+							enemyesModel.AddEnemyToScene(newEnemy);
+							enemyPresenter.OnStart();
+							messageHubService.Publish(new EnemyMessages.SpawnMessage(enemyTemp, enemyGO.transform));
+						}
 						yield return new WaitForSeconds(enemyWave.SpawnTimer);
 					}
 				}

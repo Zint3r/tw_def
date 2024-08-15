@@ -37,6 +37,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "enemy_aden_type_3",
 									Speed = 4f,
 									Hp = 10,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("enemy_aden_type_3"),
 									MovePoints = new List<MovePointVO>
 									{
@@ -83,6 +86,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "enemy_aden_type_3",
 									Speed = 4f,
 									Hp = 10,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("enemy_aden_type_3"),
 									MovePoints = new List<MovePointVO>
 									{
@@ -129,6 +135,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "enemy_aden_type_2",
 									Speed = 6f,
 									Hp = 5,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("enemy_aden_type_2"),
 									MovePoints = new List<MovePointVO>
 									{
@@ -175,6 +184,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "enemy_aden_type_1",
 									Speed = 7f,
 									Hp = 15,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("enemy_aden_type_1"),
 									MovePoints = new List<MovePointVO>
 									{
@@ -229,6 +241,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "empty",
 									Speed = 1f,
 									Hp = 100,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("empty"),
 									MovePoints = new List<MovePointVO>
 									{
@@ -275,6 +290,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "enemy_aden_type_1",
 									Speed = 7f,
 									Hp = 15,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("enemy_aden_type_1"),
 									MovePoints = new List<MovePointVO>
 									{
@@ -321,6 +339,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "enemy_aden_type_1",
 									Speed = 7f,
 									Hp = 15,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("enemy_aden_type_1"),
 									MovePoints = new List<MovePointVO>
 									{
@@ -367,6 +388,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "enemy_aden_type_2",
 									Speed = 6f,
 									Hp = 5,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("enemy_aden_type_2"),
 									MovePoints = new List<MovePointVO>
 									{
@@ -413,6 +437,9 @@ namespace Game.Features.GameDesign.Parsers
 									Name = "enemy_aden_type_2",
 									Speed = 6f,
 									Hp = 5,
+									InControl = false,
+									IsAlive = true,
+									MoveIndex = 0,
 									EnemyDefinition = gameDefinitionModel.GetOrCreate<EnemyDefinition>("enemy_aden_type_2"),
 									MovePoints = new List<MovePointVO>
 									{

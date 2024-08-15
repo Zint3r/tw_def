@@ -1,7 +1,7 @@
 using Core.CoroutineProvider;
 using Core.MessageHub;
 using Game.Features.Enemy;
-using Game.Features.HeroBuilding;
+using Game.Utils;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,26 +28,18 @@ namespace Game.Features.Heroes
 		[Inject]
 		private IMessageHubService messageHubService;
 
+		[Inject]
+		private HeroCollectionModel heroCollectionModel;
+
 		private WaitForSeconds waitForHeroAttack = new WaitForSeconds(Time.fixedDeltaTime);
-		private List<GameObject> heroes = new List<GameObject>();
-		private List<HeroPresenter> heroPresenters = new List<HeroPresenter>();
-		private List<float> currentTimersToAttack = new List<float>();
 
 		public void Initialize()
 		{
-			messageHubService.Subscribe<HeroBuildingMessages.OnCompleteHeroBuildingMessage>(AddHero);
 			coroutineService.StartCoroutine(HeroesAttack());
 		}
 		public void Dispose()
 		{
-			messageHubService.Unsubscribe<HeroBuildingMessages.OnCompleteHeroBuildingMessage>(AddHero);
 			coroutineService.StopCoroutine(HeroesAttack());
-		}
-		private void AddHero(HeroBuildingMessages.OnCompleteHeroBuildingMessage message)
-		{
-			heroes.Add(message.HeroGO);
-			heroPresenters.Add(message.HeroGO.GetComponent<HeroPresenter>());
-			currentTimersToAttack.Add(0f);
 		}
 		private HeroDamageInfo CalculateDamage(HeroVO heroVO)
 		{
@@ -74,42 +66,46 @@ namespace Game.Features.Heroes
 				return false;
 			}
 		}
-		private IEnumerator HeroesAttack()
+		private void HeroAttack(HeroStatsInfo heroStats)
 		{
-			while (true)
+			if (heroStats.CurrentTimersToAttack > heroStats.HeroVO.AttackSpeed && heroStats.HeroPresenter.EnemyList.Count > 0)
 			{
-				for (int i = 0; i < heroes.Count; i++)
+				for (int j = 0; j < heroStats.HeroPresenter.EnemyList.Count; j++)
 				{
-					if (currentTimersToAttack[i] > heroPresenters[i].Hero.AttackSpeed && heroPresenters[i].EnemyList.Count > 0)
+					EnemyStatsInfo enemyStats = DPL.EnemyDataProvider.GetEnemyByTransform(heroStats.HeroPresenter.EnemyList[j]);
+
+					if (enemyStats != null && enemyStats.EnemyVO.IsAlive == true)
 					{
-						for (int j = 0; j < heroPresenters[i].EnemyList.Count; j++)
+						if (Vector3.Distance(heroStats.HeroTransform.position, heroStats.HeroPresenter.EnemyList[j].position) < heroStats.HeroPresenter.Radius)
 						{
-							if (heroPresenters[i].EnemyList[j].TryGetComponent(out EnemyPresenter enemy) == true)
-							{
-								if (enemy.AliveStatus() == true)
-								{
-									if (Vector3.Distance(heroes[i].transform.position, heroPresenters[i].EnemyList[j].position) < heroPresenters[i].Radius)
-									{
-										currentTimersToAttack[i] = 0f;
-										messageHubService.Publish(new HeroCollectionMessages.HeroAttackMessage(heroPresenters[i].EnemyList[j], heroes[i].transform.position, CalculateDamage(heroPresenters[i].Hero)));
-										break;
-									}
-									else
-									{
-										continue;
-									}
-								}
-								else
-								{
-									heroPresenters[i].EnemyList.Remove(heroPresenters[i].EnemyList[j]);
-								}
-							}
+							heroStats.CurrentTimersToAttack = 0f;
+							messageHubService.Publish(new HeroCollectionMessages.HeroAttackMessage(enemyStats.EnemyVO.Id, heroStats.HeroPresenter.EnemyList[j], heroStats.HeroTransform.position, CalculateDamage(heroStats.HeroVO)));
+							break;
+						}
+						else
+						{
+							continue;
 						}
 					}
 					else
 					{
-						currentTimersToAttack[i] += Time.fixedDeltaTime;
+						heroStats.HeroPresenter.EnemyList.Remove(heroStats.HeroPresenter.EnemyList[j]);
 					}
+				}
+			}
+			else
+			{
+				heroStats.CurrentTimersToAttack += Time.fixedDeltaTime;
+			}
+		}
+		private IEnumerator HeroesAttack()
+		{
+			while (true)
+			{
+				List<HeroStatsInfo> allHeroOnScene = heroCollectionModel.GetAllHeroOnScene();
+				for (int i = 0; i < allHeroOnScene.Count; i++)
+				{
+					HeroAttack(allHeroOnScene[i]);
 				}
 				yield return waitForHeroAttack;
 			}

@@ -1,4 +1,3 @@
-using Core.UiService;
 using Game.Features.Enemy;
 using Game.Features.GameDesign;
 using Game.Features.Heroes;
@@ -22,6 +21,7 @@ namespace Game.Features
 			MapCreatorInstaller.Install(Container);
 			MovePointsInstaller.Install(Container);
 			EnemyesInstaller.Install(Container);
+			SkillsInstaller.Install(Container);
 			Container.Bind<PlayerControlInput>().FromNewComponentOnNewGameObject().AsSingle().NonLazy();
 		}
 	}

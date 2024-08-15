@@ -28,13 +28,14 @@ namespace Game.Features.Heroes
 
 		public class HeroAttackMessage : IMessage
 		{
+			public int EnemyId { get; }
 			public Transform TargetTransform { get; }
 			public Vector3 HeroPosition { get; }
 			public HeroDamageInfo HeroDamageInfo { get; }
-			public bool IsCrit { get; }
 
-			public HeroAttackMessage(Transform target, Vector3 heroPosition, HeroDamageInfo heroDamageInfo)
+			public HeroAttackMessage(int enemyId, Transform target, Vector3 heroPosition, HeroDamageInfo heroDamageInfo)
 			{
+				EnemyId = enemyId;
 				TargetTransform = target;
 				HeroPosition = heroPosition;
 				HeroDamageInfo = heroDamageInfo;

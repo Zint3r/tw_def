@@ -1,4 +1,5 @@
 using Core;
+using UnityEngine;
 
 namespace Game.Features.Enemy
 {
@@ -7,10 +8,12 @@ namespace Game.Features.Enemy
 		public class SpawnMessage : IMessage
 		{
 			public readonly EnemyVO Enemy;
+			public Transform EnemyTransform;
 
-			public SpawnMessage(EnemyVO enemy)
+			public SpawnMessage(EnemyVO enemy, Transform transform)
 			{
 				Enemy = enemy;
+				EnemyTransform = transform;
 			}
 		}
 
